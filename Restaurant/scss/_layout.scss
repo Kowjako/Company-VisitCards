@@ -82,6 +82,10 @@
         align-items: center;
 
         @include centering(15%);
+
+        @media(max-width: 500px) {
+            @include centering(12%);
+        }
     }
 
     &-banner {
@@ -109,6 +113,10 @@
             left: -150px;
         }
 
+        @media(max-width: 800px) {
+            display: none;
+        }
+
         img {
             width: 100%;
             opacity: .7;
@@ -125,6 +133,10 @@
 
         @media(max-width: 1300px) {
             padding: 0 50px;
+        }
+
+        @media(max-width: 800px) {
+            width: 100%;
         }
 
         .stars {
@@ -196,6 +208,12 @@
         font-size: 18px;
         color: $color-secondary;
 
-        @include textStyles(capitalize)
+        @include textStyles(capitalize);
+
+        @media(max-width: 800px) {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
     }
 }

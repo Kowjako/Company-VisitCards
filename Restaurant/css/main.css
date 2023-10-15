@@ -16,6 +16,14 @@ body {
   top: 10%;
   right: 5%;
   z-index: 300; }
+  @media (max-width: 800px) {
+    .hamburger-menu {
+      width: 35px;
+      height: 35px; } }
+  @media (max-width: 500px) {
+    .hamburger-menu {
+      width: 25px;
+      height: 25px; } }
   .hamburger-menu .menu {
     display: flex;
     flex-direction: column;
@@ -28,6 +36,12 @@ body {
       transform-origin: right;
       background-color: #d3ab55;
       transition: all .5s .5s; }
+      @media (max-width: 800px) {
+        .hamburger-menu .menu-line {
+          height: 3px; } }
+      @media (max-width: 500px) {
+        .hamburger-menu .menu-line {
+          height: 2px; } }
 
 .checkbox:checked ~ body {
   overflow: hidden; }
@@ -67,6 +81,12 @@ body {
       font-size: 50px;
       width: 90px;
       height: 90px; } }
+  @media (max-width: 500px) {
+    .logo {
+      height: 50px;
+      width: 50px;
+      font-size: 30px;
+      border-width: 2px; } }
 
 .main-name {
   font-family: "Nunito", sans-serif;
@@ -78,6 +98,10 @@ body {
   @media (max-width: 1000px) {
     .main-name {
       font-size: 40px; } }
+  @media (max-width: 500px) {
+    .main-name {
+      font-size: 20px;
+      text-align: center; } }
 
 .sub-name {
   font-family: "Josefin Sans", sans-serif;
@@ -87,6 +111,10 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
+  @media (max-width: 500px) {
+    .sub-name {
+      font-size: 12px;
+      text-align: center; } }
 
 .main-heading {
   font-family: "Dancing Script", cursive;
@@ -100,6 +128,10 @@ body {
   @media (max-width: 1000px) {
     .main-heading {
       font-size: 60px; } }
+  @media (max-width: 500px) {
+    .main-heading {
+      font-size: 40px;
+      margin-bottom: 20px; } }
 
 .sub-heading {
   font-family: "Josefin Sans", sans-serif;
@@ -119,6 +151,10 @@ body {
   @media (max-width: 1000px) {
     .sub-heading {
       font-size: 30px; } }
+  @media (max-width: 500px) {
+    .sub-heading {
+      font-size: 20px;
+      margin-bottom: 20px; } }
 
 .main-btn {
   width: 170px;
@@ -136,6 +172,16 @@ body {
   .main-btn:hover {
     background-color: #d3ab55;
     color: #262626; }
+  @media (max-width: 800px) {
+    .main-btn {
+      width: 150px;
+      height: 35px;
+      font-size: 12px; } }
+  @media (max-width: 500px) {
+    .main-btn {
+      width: 130;
+      height: 30px;
+      font-size: 10px; } }
 
 .card {
   width: 33.3333%;
@@ -165,6 +211,9 @@ body {
       @media (max-width: 900px) {
         .card-overlay-heading {
           font-size: 35px; } }
+      @media (max-width: 650px) {
+        .card-overlay-heading {
+          font-size: 25px; } }
     .card-overlay-paragraph {
       font-family: "Josefin Sans", sans-serif;
       font-size: 30px;
@@ -175,6 +224,9 @@ body {
       @media (max-width: 900px) {
         .card-overlay-paragraph {
           font-size: 20px; } }
+      @media (max-width: 650px) {
+        .card-overlay-paragraph {
+          font-size: 15px; } }
     .card-overlay-btn {
       width: 150px;
       height: 40px;
@@ -193,6 +245,11 @@ body {
         .card-overlay-btn {
           font-size: 12px;
           width: 130px;
+          height: 30px; } }
+      @media (max-width: 650px) {
+        .card-overlay-btn {
+          font-size: 10px;
+          width: 100px;
           height: 30px; } }
   .card-img {
     object-fit: cover;
@@ -265,6 +322,12 @@ body {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 500px) {
+      .header .brand {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
   .header-banner {
     text-align: center;
     position: absolute;
@@ -286,6 +349,9 @@ body {
     @media (max-width: 1300px) {
       .about-us-left {
         left: -150px; } }
+    @media (max-width: 800px) {
+      .about-us-left {
+        display: none; } }
     .about-us-left img {
       width: 100%;
       opacity: .7; }
@@ -299,6 +365,9 @@ body {
     @media (max-width: 1300px) {
       .about-us-right {
         padding: 0 50px; } }
+    @media (max-width: 800px) {
+      .about-us-right {
+        width: 100%; } }
     .about-us-right .stars {
       margin: 30px 0; }
       @media (max-width: 1000px) {
@@ -351,3 +420,8 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: capitalize; }
+    @media (max-width: 800px) {
+      .footer-copyright-paragraph {
+        width: 80%;
+        margin: auto;
+        text-align: center; } }
