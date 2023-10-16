@@ -176,17 +176,60 @@ html {
     .product-description-btn {
       font-size: 1.5rem;
       text-decoration: none;
-      color: #f5b149;
+      color: #fdefda;
       display: block;
       padding: .5rem 1rem;
       text-align: center;
-      border: 0.1rem solid #f5b149;
+      border: 0.1rem solid #333;
       background-color: #666666; }
 
 .products-btn {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.footer {
+  grid-column: 1 / 11;
+  grid-row: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5rem 0;
+  border-top: 0.1rem solid #333; }
+
+.footer-nav-heading {
+  font-size: 2.5rem;
+  color: #333; }
+
+.footer-nav-item {
+  list-style: none;
+  margin: 1rem 0; }
+
+.footer-nav-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #595959;
+  transition: color .2s; }
+  .footer-nav-link:hover {
+    color: #8c8c8c; }
+
+.contact-list-heading {
+  font-size: 2.5rem;
+  color: #333; }
+
+.contact-list-item {
+  list-style: none;
+  margin: 1rem 0; }
+
+.contact-list-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #595959;
+  transition: color .2s; }
+  .contact-list-link:hover {
+    color: #8c8c8c; }
 
 .logo {
   grid-column: 1 / 2;

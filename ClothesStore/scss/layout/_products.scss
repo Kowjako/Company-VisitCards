@@ -68,11 +68,11 @@
         &-btn {
             font-size: size(sm);
             text-decoration: none;
-            color: color(quaternary);
+            color: lighten(color(quaternary), 30%);
             display: block;
             padding: .5rem 1rem;
             text-align: center;
-            border: .1rem solid color(quaternary);
+            border: .1rem solid color(primary);
             background-color: lighten(color(primary), 20%);
         }
     }
