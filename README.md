@@ -10,7 +10,7 @@ Repozytorium zawiera dwa projekty - landing dla restauracji oraz landing dla skl
 ![Screenshot_7](https://github.com/Kowjako/SassyLandings/assets/19534189/a4feb49b-869f-472b-b84f-285c43526ba8)
 ![Screenshot_8](https://github.com/Kowjako/SassyLandings/assets/19534189/c7e12844-f324-4861-9f49-8083d032404b)
 
-3. Projekt drugi - sklep odziezowy
+2. Projekt drugi - sklep odziezowy
      
 ![Screenshot_1](https://github.com/Kowjako/SassyLandings/assets/19534189/51481864-f18b-4b19-a9cf-b1716a20babc)
 ![Screenshot_2](https://github.com/Kowjako/SassyLandings/assets/19534189/b73a2765-cd77-4c79-87ef-d50cd84adcbb)
