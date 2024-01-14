@@ -1,5 +1,6 @@
 # SassyLandings
 Repozytorium zawiera dwa projekty - landing dla restauracji oraz landing dla sklepu odziezy. Projekty zostaly wykonane w celu zapoznania sie w praktyce z preprocessorem CSS a mianowicie SASS oraz jego możliwościami.
+Rowniez wykorzystalem zaawansowane techniki z CSS, a takze projekty na roznych layout'ach (Fluid layouts, Flexbox, CSS Grid).
 
 ## Co udalo sie wykonac
 1. Projekt pierwszy - landing restauracji
