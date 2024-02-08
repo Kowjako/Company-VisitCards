@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="filter">
+    <div class="filter__title">
+      <!-- in Angular we can tie to ts function to open dropdown-->
+      <a href="#">Sectors</a>
+    </div>
+    <div class="filter__content">
+      <ul class="filter__content-list">
+        <li class="search-line">
+          <!-- aka checkbox hack, we need it to control through pseudoclass-->
+          <input hidden id="1" type="radio" name="sector-cat">
+          <label for="1">
+            <span></span>
+            All
+          </label>
+          <span class="search-line__total">15</span>
+        </li>
+        <li class="search-line">
+          <input hidden id="2" type="radio" name="sector-cat">
+          <label for="2">
+            <span></span>
+            Aerospace Aviation
+          </label>
+          <span class="search-line__total">12</span>
+        </li>
+        <li class="search-line">
+          <input hidden id="3" type="radio" name="sector-cat">
+          <label for="3">
+            <span></span>
+            Automotive
+          </label>
+          <span class="search-line__total">30</span>
+        </li>
+        <li class="search-line">
+          <input hidden id="4" type="radio" name="sector-cat">
+          <label for="4">
+            <span></span>
+            Chemical Industry
+          </label>
+          <span class="search-line__total">1</span>
+        </li>
+        <li class="search-line">
+          <input hidden id="5" type="radio" name="sector-cat">
+          <label for="5">
+            <span></span>
+            Education Training
+          </label>
+          <span class="search-line__total">0</span>
+        </li>
+        <li class="search-line">
+          <input hidden id="6" type="radio" name="sector-cat">
+          <label for="6">
+            <span></span>
+            Energy
+          </label>
+          <span class="search-line__total">0</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

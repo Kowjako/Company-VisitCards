@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+.filter {
+  font-size: 1.6rem;
+  margin: 5rem;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  width: 25rem;
+  border: 1px solid #e2e4e5;
+  box-shadow: 0px 0px 10px 0px #00000036;
+}
+
+.filter__title {
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+
+  /* stands for arrow down */
+  a::before {
+    content: "\2193";
+    position: absolute;
+    right: .5rem;
+    top: -3px;
+    font-size: 1.6rem;
+    color: currentColor;
+  }
+}
+
+.filter__content {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.filter__content-list {
+  list-style: none;
+
+  .search-line {
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+
+    .search-line__total {
+      margin-left: auto; /* flex trick to align flex item at right side */
+      color: #000;
+      background-color: #d2dadb;
+      font-size: 1rem;
+      padding: 2px;
+      display: block;
+      text-align: center;
+      border-radius: 50%;
+      width: 2rem;
+    }
+
+    label {
+      display: flex;
+      align-items: center; /* align checkbox at center */
+    }
+
+    /* It stands for "checkbox" - its empty span with border */
+    label > span {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: inline-block; /* because span initially inline, but we want to set width + height */
+      margin: 0 1rem 0 0 ;
+      background-color: #fff;
+      border: 1px solid #c2d1d3;
+      position: relative;
+    }
+
+    /* It stands for "checkbox - checked" - small blue area inside border */
+    label > span::before {
+      content: "";
+      width: .5rem;
+      height: .5rem;
+      position: absolute;
+      background-color: rgba(0, 162, 255, 0.712);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* ideally center hack */
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+/* label binded to radio-input, its called "checkbox hack", when we click label
+input has pseudoclass checked and then we can manipulate some items, here we select label > span and before pseudo-elemnt
+which stands for small rectangle inside border */
+input[type='radio']:checked ~ label > span::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+input[type='radio']:checked ~ label > span {
+  border: 1px solid rgba(0, 162, 255, 0.712);
+}
