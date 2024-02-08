@@ -1,0 +1,35 @@
+@import "base";
+
+
+.icon {
+  display: block;
+}
+
+.line {
+  font-size: 7rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 4rem;
+
+  // on parent, because it will endup that child container (line) will conatin full content,
+  // if we set overflow-x to child, it will crop items
+  &__overflow {
+    overflow-x: hidden;
+  }
+
+  animation-name: running-line;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes running-line {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2640px); // each item (200px + 40px gap) = 240*11 = 2640
+  }
+}
